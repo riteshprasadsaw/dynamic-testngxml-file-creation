@@ -40,13 +40,8 @@ pipeline {
 
         steps{
 
-            try {
                 sh "mvn clean test"
-            } catch (err) {
 
-            } finally {
-                echo 'Now Error Handling...'
-            }
         }
 
     }

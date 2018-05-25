@@ -36,8 +36,8 @@
       <file leaf-file-name="E2E-automation-test.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="2" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="250">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -158,7 +158,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="258" />
     <option name="y" value="18" />
     <option name="width" value="1401" />
@@ -911,8 +911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="2" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="250">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
