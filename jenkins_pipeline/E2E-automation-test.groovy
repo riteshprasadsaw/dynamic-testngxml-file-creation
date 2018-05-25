@@ -20,10 +20,10 @@ pipeline {
     stage('Git checkout') { // for display purposes
 
         steps{
-
-        }
             git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
         }
+
+
 
         post {
 
@@ -34,15 +34,21 @@ pipeline {
             }
 
         }
+    }
 
     stage('Smoke') {
-        try {
-            sh "mvn clean test"
-        } catch (err) {
 
-        } finally {
-            echo 'Now Error Handling...'
+        steps{
+
+            try {
+                sh "mvn clean test"
+            } catch (err) {
+
+            } finally {
+                echo 'Now Error Handling...'
+            }
         }
+
     }
 
     stage ('End-To-End'){
