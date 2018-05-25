@@ -36,15 +36,15 @@ pipeline {
         }
     }
 
-    stage('Smoke') {
-
-        steps{
-
-                sh "mvn clean test"
-
-        }
-
-    }
+//    stage('Smoke') {
+//
+//        steps{
+//
+//                sh "mvn clean test"
+//
+//        }
+//
+//    }
 
     stage ('End-To-End'){
 

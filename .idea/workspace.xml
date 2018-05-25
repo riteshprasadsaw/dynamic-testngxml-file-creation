@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5421ce40-5eb0-4cd2-89a3-2ae31b4a37d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,7 +36,7 @@
       <file leaf-file-name="E2E-automation-test.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="132">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
@@ -911,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkins_pipeline/E2E-automation-test.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="132">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
