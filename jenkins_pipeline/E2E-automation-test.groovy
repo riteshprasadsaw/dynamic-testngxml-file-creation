@@ -7,11 +7,11 @@ node {
     }
 
 
-    triggers {
-
-        pollSCM('* * * * *')
-
-    }
+//    triggers {
+//
+//        pollSCM('* * * * *')
+//
+//    }
 
     stage('Git checkout') { // for display purposes
 
