@@ -14,14 +14,27 @@ pipeline {
         pollSCM('* * * * *')
 
     }
+
+    node('staging_node') {
+
+        stage ('Regression'){
+
+            steps {
+
+                build job: 'maven-project'
+
+            }
+
+        }
+    }
     stages{
 
 
     stage('Git checkout') { // for display purposes
 
-        steps{
-            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
-        }
+//        steps{
+//            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
+//        }
 
 
 
@@ -46,15 +59,15 @@ pipeline {
 //
 //    }
 
-    stage ('End-To-End'){
-
-        steps {
-
-            build job: 'maven-project'
-
-        }
-
-    }
+//    stage ('End-To-End'){
+//
+//        steps {
+//
+//            build job: 'maven-project'
+//
+//        }
+//
+//    }
 
 //    stage ('Deployments'){
 //        parallel{
