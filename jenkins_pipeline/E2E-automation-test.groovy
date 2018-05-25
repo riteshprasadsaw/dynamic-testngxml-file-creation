@@ -3,10 +3,10 @@ pipeline {
 
     agent any
 
-    parameters {
-        string(name: 'tomcat_dev', defaultValue: '35.166.210.154', description: 'Staging Server')
-        string(name: 'tomcat_prod', defaultValue: '34.209.233.6', description: 'Production Server')
-    }
+//    parameters {
+//        string(name: 'tomcat_dev', defaultValue: '35.166.210.154', description: 'Staging Server')
+//        string(name: 'tomcat_prod', defaultValue: '34.209.233.6', description: 'Production Server')
+//    }
 
 
     triggers {
@@ -15,45 +15,37 @@ pipeline {
 
     }
 
-    node('staging_node') {
-
-
-                build job: 'maven-project'
-
-
-
-    }
     stages{
 
-
-    stage('Git checkout') { // for display purposes
-
-        steps{
-            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
-        }
-
-
-
-        post {
-
-            success {
-
-                echo 'Now Checking Out...'
-
-            }
-
-        }
-    }
-
-//    stage('Smoke') {
+//
+//    stage('Git checkout') { // for display purposes
 //
 //        steps{
-//
-//                sh "mvn clean test"
-//
+//            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
 //        }
 //
+//
+//
+//        post {
+//
+//            success {
+//
+//                echo 'Now Checking Out...'
+//
+//            }
+//
+//        }
 //    }
+
+    stage('Smoke') {
+
+        steps{
+
+                sh "mvn clean test"
+
+        }
+
+    }
 
 //    stage ('End-To-End'){
 //
