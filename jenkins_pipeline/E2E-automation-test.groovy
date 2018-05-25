@@ -1,5 +1,7 @@
 #!groovy
-node {
+pipeline {
+
+    agent any
 
     parameters {
         string(name: 'tomcat_dev', defaultValue: '35.166.210.154', description: 'Staging Server')
@@ -7,11 +9,11 @@ node {
     }
 
 
-//    triggers {
-//
-//        pollSCM('* * * * *')
-//
-//    }
+    triggers {
+
+        pollSCM('* * * * *')
+
+    }
 
     stage('Git checkout') { // for display purposes
 
