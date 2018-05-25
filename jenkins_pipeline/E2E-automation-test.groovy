@@ -14,6 +14,8 @@ pipeline {
         pollSCM('* * * * *')
 
     }
+    stages{
+
 
     stage('Git checkout') { // for display purposes
 
@@ -72,4 +74,5 @@ pipeline {
 
 
 
+}
 }
