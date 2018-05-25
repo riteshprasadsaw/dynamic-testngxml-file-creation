@@ -17,15 +17,11 @@ pipeline {
 
     node('staging_node') {
 
-        stage ('Regression'){
-
-            steps {
 
                 build job: 'maven-project'
 
-            }
 
-        }
+
     }
     stages{
 
