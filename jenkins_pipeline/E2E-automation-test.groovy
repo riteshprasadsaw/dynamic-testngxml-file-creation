@@ -32,9 +32,9 @@ pipeline {
 
     stage('Git checkout') { // for display purposes
 
-//        steps{
-//            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
-//        }
+        steps{
+            git 'https://github.com/ryanisenia/selenium_automation_pipeline.git'
+        }
 
 
 
